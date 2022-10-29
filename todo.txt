@@ -1,0 +1,7 @@
+Problems to solve: 
+
+https://leetcode.com/problems/substring-with-concatenation-of-all-words/
+
+
+
+- find out a way to calculate permutations and combinations within an array
