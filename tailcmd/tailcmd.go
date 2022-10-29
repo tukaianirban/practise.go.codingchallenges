@@ -4,7 +4,7 @@ import (
 	"bufio"
 	"os"
 
-	"practice_scripting/lrucachelist"
+	"practise.go.codingchallenges/lrucachelist"
 	// "practice_scripting/lrucache"
 )
 

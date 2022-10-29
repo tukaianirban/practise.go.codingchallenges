@@ -1,3 +1,3 @@
-module practice_scripting
+module practise.go.codingchallenges
 
 go 1.16

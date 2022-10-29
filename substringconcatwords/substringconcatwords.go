@@ -4,8 +4,9 @@ Problem definition: https://leetcode.com/problems/substring-with-concatenation-o
 package substringconcatwords
 
 import (
-	"practice_scripting/permutations"
 	"strings"
+
+	"practise.go.codingchallenges/permutations"
 )
 
 func findMatchingSubstrings(s string, words []string) []int {
