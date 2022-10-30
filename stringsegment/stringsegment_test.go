@@ -2,20 +2,20 @@ package stringsegment
 
 import "testing"
 
-func TestFindStringSegment(t *testing.T) {
+func TestFindSegments(t *testing.T) {
 
-	var dictionary = [4]string{"apple", "pear", "pier", "pie"}
-	var masterWord = "applepie"
-	word1, word2 := findStringSegment(masterWord, dictionary[:])
+	var dictionary = []string{"apple", "pear", "pier", "pie", "orange", "mango"}
+	var masterWord = "pierapple"
 
-	t.Logf("found words= %s %s", word1, word2)
+	segments := findSegments(masterWord, dictionary[:])
+	t.Logf("Found segments = %#v", segments)
 }
 
-func TestIsContainedInStringArray(t *testing.T) {
+func TestFindSegments2(t *testing.T) {
 
-	var dictionary = [6]string{"apple", "pear", "pier", "pie", "fruit", "banana"}
-	var findWord = "per"
-	var excepts = [3]string{"pear"}
+	var dictionary = []string{"apple", "pear", "pier", "pie", "orange", "mango"}
+	var masterWord = "pierapporange"
 
-	t.Logf("isContainedInStringArray = %t", isContainedInStringArray(dictionary[:], findWord, excepts[:]))
+	segments := findSegments2(masterWord, dictionary)
+	t.Logf("Found segments = %#v", segments)
 }
